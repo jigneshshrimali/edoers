@@ -1,0 +1,6 @@
+{
+  "name": "EDOERS — Digital Experience Studio",
+  "description": "Engineering digital experiences that elevate businesses. Ultra-premium digital experience studio specialising in product architecture, motion design, and enterprise digital solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

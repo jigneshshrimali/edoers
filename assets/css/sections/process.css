@@ -1,0 +1,94 @@
+/**
+ * EDOERS Process / 4-Stage Methodology Section
+ */
+
+.process-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  width: 2px;
+  height: 100%;
+  background: var(--border-subtle);
+  z-index: 0;
+}
+
+@media (max-width: 640px) {
+  .process-timeline::before {
+    display: none;
+  }
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .process-step {
+    grid-template-columns: 1fr;
+  }
+}
+
+.process-step-num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-medium);
+  color: var(--cyan-accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.process-step:hover .process-step-num,
+.process-step.active .process-step-num {
+  background: var(--cyan-accent);
+  color: #08090C;
+  border-color: var(--cyan-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.process-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-smooth);
+}
+
+.process-step:hover .process-step-card {
+  border-color: var(--border-accent);
+}
+
+.process-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.step-duration {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cyan-accent);
+  background: var(--cyan-subtle);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}

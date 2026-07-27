@@ -1,0 +1,169 @@
+/**
+ * EDOERS Master Design System - Centralised Design Tokens & CSS Variables
+ * Centralises all typography, spacing, padding, line heights, and color constants.
+ * Dual-Theme System: Dark Obsidian (Default) & Refined Light Ceramic
+ */
+
+:root {
+  /* ==========================================================================
+     1. COLOR PALETTE & THEME CONSTANTS (Dark Obsidian Master Theme)
+     ========================================================================== */
+  --bg-primary: #030712;
+  --bg-secondary: #0B0F19;
+  --bg-tertiary: #111827;
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-glass: rgba(11, 15, 25, 0.85);
+  --bg-elevated: #1E293B;
+
+  /* Typography Colors - High Contrast AA/AAA */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #030712;
+
+  /* Accent Colors - Signature Royal Blue & Electric Cyan */
+  --blue-primary: #2563EB;
+  --blue-hover: #1D4ED8;
+  --cyan-accent: #38BDF8;
+  --cyan-bright: #00F2FE;
+  --cyan-glow: rgba(56, 189, 248, 0.25);
+  --cyan-subtle: rgba(56, 189, 248, 0.08);
+  --cyan-border: rgba(56, 189, 248, 0.3);
+
+  /* Architectural Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-accent: var(--cyan-border);
+
+  /* Shadows & Depth */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 35px rgba(0, 242, 254, 0.18);
+  --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+  /* ==========================================================================
+     2. TYPOGRAPHY CONSTANTS (Font Families, Sizes, Line-Heights, Weights)
+     ========================================================================== */
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Mono', SFMono-Regular, Consolas, monospace;
+
+  /* Fluid Font Sizes */
+  --font-size-h1: clamp(2.5rem, 4.8vw, 3.75rem);
+  --font-size-h2: clamp(2rem, 3.5vw, 2.75rem);
+  --font-size-h3: clamp(1.25rem, 1.8vw, 1.5rem);
+  --font-size-h4: clamp(1.0625rem, 1.25vw, 1.25rem);
+  --font-size-lead: clamp(1.0625rem, 1.25vw, 1.25rem);
+  --font-size-body: clamp(0.9375rem, 1vw, 1rem);
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-eyebrow: clamp(0.75rem, 0.85vw, 0.875rem);
+  --font-size-btn: clamp(0.875rem, 0.95vw, 0.9375rem);
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-heading: 1.15;
+  --line-height-card: 1.25;
+  --line-height-body: 1.65;
+  --line-height-lead: 1.6;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Letter Spacings */
+  --tracking-tight: -0.035em;
+  --tracking-heading: -0.03em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.01em;
+  --tracking-widest: 0.12em;
+
+  /* ==========================================================================
+     3. SPACING, GAP & PADDING CONSTANTS
+     ========================================================================== */
+  /* Base Spacing Scale */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* Component Paddings */
+  --section-padding-y: clamp(4.5rem, 8vw, 7.5rem);
+  --section-padding-x: clamp(1.25rem, 5vw, 4rem);
+  --card-padding: clamp(1.5rem, 3vw, 2.25rem);
+  --card-padding-sm: 1.25rem;
+  --button-padding-y: 0.75rem;
+  --button-padding-x: 1.6rem;
+  --input-padding-y: 0.875rem;
+  --input-padding-x: 1.25rem;
+
+  /* Component Gaps */
+  --gap-2xs: 0.25rem;
+  --gap-xs: 0.5rem;
+  --gap-sm: 0.75rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+  --gap-2xl: 3rem;
+
+  /* ==========================================================================
+     4. CONTAINERS, RADII & TRANSITIONS
+     ========================================================================== */
+  --container-max: 1440px;
+  --container-narrow: 1080px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* ==========================================================================
+   5. REFINED LIGHT CERAMIC THEME OVERRIDES
+   ========================================================================== */
+[data-theme="light"] {
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #F1F5F9;
+  --bg-tertiary: #E2E8F0;
+  --bg-card: #FFFFFF;
+  --bg-glass: rgba(248, 250, 252, 0.9);
+  --bg-elevated: #FFFFFF;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+
+  --blue-primary: #1D4ED8;
+  --blue-hover: #1E40AF;
+  --cyan-accent: #0284C7;
+  --cyan-bright: #0284C7;
+  --cyan-glow: rgba(2, 132, 199, 0.15);
+  --cyan-subtle: rgba(2, 132, 199, 0.08);
+  --cyan-border: rgba(2, 132, 199, 0.3);
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-medium: rgba(15, 23, 42, 0.16);
+  --border-accent: var(--cyan-border);
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 10px 25px rgba(15, 23, 42, 0.08);
+  --shadow-glow: 0 0 30px rgba(2, 132, 199, 0.12);
+  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+

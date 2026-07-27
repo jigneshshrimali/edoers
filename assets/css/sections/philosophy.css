@@ -1,0 +1,68 @@
+/**
+ * EDOERS Philosophy Section - Text Left / Visual Right Rhythm
+ */
+
+.philosophy-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.philosophy-engine-diagram {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.engine-node {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-smooth);
+}
+
+.engine-node:hover,
+.engine-node.active {
+  border-color: var(--cyan-accent);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.02);
+}
+
+.node-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.node-status {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--cyan-accent);
+  background: var(--cyan-subtle);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.engine-connector {
+  height: 20px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--cyan-accent), transparent);
+  margin-left: 2rem;
+}

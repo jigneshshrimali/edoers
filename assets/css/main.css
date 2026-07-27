@@ -1,0 +1,27 @@
+/**
+ * EDOERS Master CSS Bundle Aggregator
+ */
+
+@import "./variables.css";
+@import "./reset.css";
+@import "./typography.css";
+@import "./layout.css";
+@import "./utilities.css";
+@import "./animations.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./responsive.css";
+
+/* Section Modular CSS Imports */
+@import "./sections/hero.css";
+@import "./sections/philosophy.css";
+@import "./sections/featured-work.css";
+@import "./sections/services.css";
+@import "./sections/process.css";
+@import "./sections/calculator.css";
+@import "./sections/trust.css";
+@import "./sections/cta.css";
+@import "./sections/contact.css";
+@import "./sections/portfolio.css";
+@import "./sections/detail.css";
+@import "./sections/pages.css";

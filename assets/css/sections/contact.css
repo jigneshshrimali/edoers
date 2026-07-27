@@ -1,0 +1,215 @@
+/**
+ * EDOERS Contact Page & Office Map Styles (Matching Image 1)
+ */
+
+.contact-hero {
+  padding-top: clamp(6rem, 10vw, 9rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  background: var(--bg-primary);
+}
+
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr 1.25fr;
+  }
+}
+
+/* Info Cards Column (Left) */
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-smooth);
+}
+
+.contact-info-card:hover {
+  border-color: var(--blue-primary);
+  transform: translateY(-2px);
+}
+
+.info-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid var(--cyan-border);
+  color: var(--blue-primary);
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .info-icon-wrapper {
+  background: rgba(37, 99, 235, 0.08);
+  color: #1D4ED8;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-label {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.info-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.info-value-text {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* Contact Form Card (Right) */
+.contact-form-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  box-shadow: var(--shadow-card);
+}
+
+.contact-form-header {
+  margin-bottom: 2rem;
+}
+
+.contact-form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* 4 Value Badges Ribbon */
+.contact-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.value-badge-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+}
+
+.badge-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--blue-primary);
+  flex-shrink: 0;
+}
+
+.badge-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.badge-desc {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Map Section (Image 1 Bottom) */
+.office-map-section {
+  padding-top: clamp(4rem, 8vw, 6rem);
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+  background: var(--bg-secondary);
+}
+
+.map-container-box {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  background: #0B0F19;
+}
+
+[data-theme="light"] .map-container-box {
+  background: #E2E8F0;
+}
+
+/* Interactive SVG Map Graphic */
+.svg-map-graphic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-overlay-card {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  max-width: 380px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  z-index: 10;
+}
+
+@media (max-width: 640px) {
+  .map-overlay-card {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}

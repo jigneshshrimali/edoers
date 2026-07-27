@@ -1,0 +1,98 @@
+/**
+ * EDOERS Typography System - Fluid Hierarchy, Clamp Scaling & Editorial Precision
+ */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--tracking-heading);
+  color: var(--text-primary);
+}
+
+h1, .h1, .hero-headline, .page-title {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-tight);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+
+h2, .h2, .section-title {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--tracking-heading);
+  text-wrap: balance;
+}
+
+h3, .h3, .card-title, .portfolio-title, .service-title, .blog-title {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-card);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-normal);
+}
+
+h4, .h4 {
+  font-size: var(--font-size-h4);
+  line-height: 1.35;
+  font-weight: var(--font-weight-bold);
+}
+
+p, .body-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--text-secondary);
+  max-width: 68ch;
+}
+
+p.lead, .text-lead, .lead-text, .hero-subtitle, .section-subtitle, .page-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lead);
+  line-height: var(--line-height-lead);
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-regular);
+  max-width: 60ch;
+}
+
+/* Master Caption / Eyebrow Uniform Styling */
+.text-eyebrow, .section-eyebrow, .page-eyebrow, .hero-header-pill {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-eyebrow);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--blue-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--cyan-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-blue-gradient {
+  background: linear-gradient(135deg, var(--blue-primary), var(--cyan-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-cyan {
+  color: var(--cyan-accent);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+

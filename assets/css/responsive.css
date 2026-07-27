@@ -1,0 +1,26 @@
+/**
+ * EDOERS Responsive System - Breakpoints 320px to 2560px
+ */
+
+/* 320px - 375px Extra Small Mobile Devices */
+@media (max-width: 375px) {
+  html { font-size: 14px; }
+  .btn { padding: 0.75rem 1.25rem; font-size: 0.85rem; }
+  .status-pill { font-size: 0.7rem; padding: 0.25rem 0.5rem; }
+}
+
+/* 768px Tablet Devices */
+@media (max-width: 768px) {
+  .section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .grid-split { gap: 2.5rem; }
+}
+
+/* 1440px - 2560px Ultra-Wide & 4K Displays */
+@media (min-width: 1920px) {
+  :root {
+    --container-max: 1728px;
+  }
+  html {
+    font-size: 18px;
+  }
+}

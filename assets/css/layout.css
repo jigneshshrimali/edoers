@@ -1,0 +1,129 @@
+/**
+ * EDOERS Layout Architecture - Grid, Alternating Rhythm & Containers
+ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  position: relative;
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+  overflow: hidden;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), var(--cyan-border), var(--border-subtle), transparent);
+}
+
+/* Master Alternating Rhythm Grid System */
+.grid-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .grid-split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-split.layout-text-right {
+    grid-template-areas: "visual text";
+  }
+
+  .grid-split.layout-text-right .split-text {
+    grid-area: text;
+  }
+
+  .grid-split.layout-text-right .split-visual {
+    grid-area: visual;
+  }
+
+  .grid-split.layout-text-left {
+    grid-template-areas: "text visual";
+  }
+
+  .grid-split.layout-text-left .split-text {
+    grid-area: text;
+  }
+
+  .grid-split.layout-text-left .split-visual {
+    grid-area: visual;
+  }
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grid-4col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Single Page View Containers */
+.page-view {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  position: relative;
+  will-change: opacity, transform;
+}
+
+.page-view.active {
+  display: block;
+  opacity: 1;
+}

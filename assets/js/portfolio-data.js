@@ -1,0 +1,242 @@
+/**
+ * EDOERS Master Portfolio Dataset (Matching Images 1, 2, 4, 5)
+ */
+
+export const ALL_PROJECTS = [
+  {
+    id: 'nexora-banking',
+    title: 'Nexora Banking Platform',
+    category: 'web-applications',
+    categoryLabel: 'WEB APPLICATION',
+    badgeText: 'Web Application',
+    client: 'Nexora Fintech Pvt. Ltd.',
+    industry: 'Fintech',
+    timeline: '6 Months',
+    teamSize: '12 Members',
+    services: 'UI/UX Design, Web Development, DevOps, QA & Testing',
+    liveUrl: 'https://www.nexora.com',
+    description: 'A next-generation digital banking platform built to deliver seamless, secure and personalized banking experience for modern customers.',
+    tags: ['Fintech', 'Web Application', 'Enterprise Solution', 'Cloud'],
+    metrics: [
+      { value: '40%', label: 'Increase in user engagement', icon: 'trending-up' },
+      { value: '60%', label: 'Faster transaction processing', icon: 'zap' },
+      { value: '99.99%', label: 'Uptime and reliability', icon: 'shield-check' },
+      { value: '4.8/5', label: 'User satisfaction rating', icon: 'star' }
+    ],
+    overview: 'Nexora is a comprehensive digital banking platform that empowers users to manage their finances effortlessly. From account management to investments, everything is designed to be fast, secure and intuitive.',
+    roles: [
+      'Product Design',
+      'UI/UX Design',
+      'Frontend Development',
+      'Backend Development',
+      'QA & Testing',
+      'DevOps'
+    ],
+    features: [
+      'Secure Authentication (MFA & Biometric)',
+      'Real-time account overview and insights',
+      'Instant fund transfers',
+      'Bill payments and recharges',
+      'Smart budgeting and analytics',
+      'Investment & loan management'
+    ],
+    techStack: [
+      { name: 'React', icon: 'react' },
+      { name: 'Next.js', icon: 'nextjs' },
+      { name: 'TypeScript', icon: 'typescript' },
+      { name: 'Node.js', icon: 'nodejs' },
+      { name: 'MongoDB', icon: 'mongodb' },
+      { name: 'AWS', icon: 'aws' },
+      { name: 'Docker', icon: 'docker' },
+      { name: 'Redis', icon: 'redis' }
+    ],
+    gallery: [
+      '/assets/screenshots/nexora-1.jpg',
+      '/assets/screenshots/nexora-2.jpg',
+      '/assets/screenshots/nexora-3.jpg',
+      '/assets/screenshots/nexora-4.jpg'
+    ]
+  },
+  {
+    id: 'medigor-healthcare',
+    title: 'Medigor Healthcare Portal',
+    category: 'saas-platforms',
+    categoryLabel: 'SAAS PLATFORM',
+    badgeText: 'SaaS Platform',
+    client: 'Medigor Health Systems',
+    industry: 'Healthcare',
+    timeline: '8 Months',
+    teamSize: '15 Members',
+    services: 'SaaS Architecture, UI/UX, Cloud Infrastructure',
+    liveUrl: 'https://www.medigorhealth.com',
+    description: 'Unified healthcare management system for hospitals and clinics streamlining patient care and operations.',
+    tags: ['Healthcare', 'SaaS Platform', 'HIPAA Compliant', 'Cloud'],
+    metrics: [
+      { value: '75%', label: 'Reduction in appointment wait times', icon: 'zap' },
+      { value: '2.5M+', label: 'Patient records processed securely', icon: 'database' },
+      { value: '100%', label: 'HIPAA & GDPR Compliance', icon: 'shield' },
+      { value: '4.9/5', label: 'Clinical staff satisfaction rating', icon: 'star' }
+    ],
+    overview: 'Medigor is an end-to-end clinical workflow and patient record portal engineered for hospital networks to eliminate paperwork and accelerate care delivery.',
+    roles: ['Product Architecture', 'UI/UX Design', 'Full-Stack Development', 'HIPAA Compliance Security'],
+    features: ['EHR Management', 'Telemedicine Suite', 'AI Diagnostics Assistant', 'Automated Billing'],
+    techStack: [{ name: 'React' }, { name: 'Node.js' }, { name: 'PostgreSQL' }, { name: 'AWS' }],
+    gallery: []
+  },
+  {
+    id: 'datalyze-analytics',
+    title: 'Datalyze Analytics',
+    category: 'ai-solutions',
+    categoryLabel: 'ANALYTICS PLATFORM',
+    badgeText: 'Analytics Platform',
+    client: 'Datalyze Global',
+    industry: 'Business Intelligence',
+    timeline: '5 Months',
+    teamSize: '10 Members',
+    services: 'AI Modeling, Big Data Architecture, Dashboard UI',
+    liveUrl: 'https://www.datalyze.io',
+    description: 'AI-driven analytics platform that turns data into actionable insights for high-growth enterprises.',
+    tags: ['AI Solutions', 'Analytics Platform', 'Big Data', 'Enterprise'],
+    metrics: [
+      { value: '10x', label: 'Faster query execution', icon: 'zap' },
+      { value: '94%', label: 'Predictive forecasting accuracy', icon: 'trending-up' },
+      { value: '99.9%', label: 'Data pipeline uptime', icon: 'shield' },
+      { value: '4.8/5', label: 'Analyst rating', icon: 'star' }
+    ],
+    overview: 'Datalyze aggregates streaming metrics across multi-cloud environments, rendering automated executive summaries and anomaly alerts.',
+    roles: ['Data Engineering', 'Frontend WebGL', 'AI Model Fine-tuning', 'UX Research'],
+    features: ['Real-time Streaming Charts', 'Natural Language Querying', 'Exportable BI Reports', 'Custom Alerts'],
+    techStack: [{ name: 'TypeScript' }, { name: 'D3.js' }, { name: 'Python' }, { name: 'Snowflake' }],
+    gallery: []
+  },
+  {
+    id: 'taskify-mobile',
+    title: 'Taskify Mobile App',
+    category: 'mobile-apps',
+    categoryLabel: 'MOBILE APPLICATION',
+    badgeText: 'Mobile Application',
+    client: 'Taskify Technologies',
+    industry: 'Productivity',
+    timeline: '4 Months',
+    teamSize: '8 Members',
+    services: 'Mobile Design, iOS & Android Development, Cloud Sync',
+    liveUrl: 'https://www.taskifyapp.io',
+    description: 'Productivity mobile app to manage tasks, teams, and workflows with intelligent automation.',
+    tags: ['Mobile Application', 'Productivity', 'Cross-Platform', 'Cloud Sync'],
+    metrics: [
+      { value: '500K+', label: 'Active mobile downloads', icon: 'download' },
+      { value: '4.9/5', label: 'App Store rating', icon: 'star' },
+      { value: '<15ms', label: 'Offline sync latency', icon: 'zap' },
+      { value: '88%', label: 'Daily active user retention', icon: 'user-check' }
+    ],
+    overview: 'Taskify is a fluid, gesture-driven task and workspace app designed for modern remote teams seeking focused execution.',
+    roles: ['Mobile UX/UI', 'React Native Architecture', 'Offline-First Engine'],
+    features: ['Kanban & Timeline Views', 'Voice Command Tasks', 'Team Chat Integration', 'Smart Reminders'],
+    techStack: [{ name: 'React Native' }, { name: 'TypeScript' }, { name: 'GraphQL' }, { name: 'Firebase' }],
+    gallery: []
+  },
+  {
+    id: 'culina-restaurant',
+    title: 'Culina Restaurant',
+    category: 'websites',
+    categoryLabel: 'WEBSITE',
+    badgeText: 'Website',
+    client: 'Culina Hospitality Group',
+    industry: 'Hospitality & Dining',
+    timeline: '3 Months',
+    teamSize: '6 Members',
+    services: 'Brand Strategy, Web Design, Table Reservation Engine',
+    liveUrl: 'https://www.culina.restaurant',
+    description: 'Elegant website for a luxury restaurant and fine dining experience with instant table reservation.',
+    tags: ['Website', 'Hospitality', 'Brand Design', 'Reservations'],
+    metrics: [
+      { value: '+210%', label: 'Increase in direct table bookings', icon: 'trending-up' },
+      { value: '<0.6s', label: 'Page loading speed', icon: 'zap' },
+      { value: '98%', label: 'Mobile traffic satisfaction', icon: 'smile' },
+      { value: '4.9/5', label: 'Diner feedback rating', icon: 'star' }
+    ],
+    overview: 'Culina combines culinary artistry with a tactile digital experience featuring interactive menus and real-time seating availability.',
+    roles: ['Brand Identity', 'Creative Web Design', 'Reservation API Integration'],
+    features: ['Interactive Tasting Menu', 'Real-time Table Booking', 'Virtual 3D Restaurant Tour', 'Events Calendar'],
+    techStack: [{ name: 'Next.js' }, { name: 'Tailwind CSS' }, { name: 'Motion' }, { name: 'Stripe' }],
+    gallery: []
+  },
+  {
+    id: 'buildcon-engineering',
+    title: 'Buildcon Engineering',
+    category: 'websites',
+    categoryLabel: 'WEBSITE',
+    badgeText: 'Website',
+    client: 'Buildcon Group',
+    industry: 'Construction & Infrastructure',
+    timeline: '4 Months',
+    teamSize: '7 Members',
+    services: 'Corporate Web Design, 3D Project Viewer, Lead Engine',
+    liveUrl: 'https://www.buildconeng.com',
+    description: 'Corporate website for engineering firm showcasing megastructure projects and technical capabilities.',
+    tags: ['Website', 'Engineering', 'Corporate', 'Infrastructure'],
+    metrics: [
+      { value: '$120M+', label: 'Tender project inquiries received', icon: 'dollar-sign' },
+      { value: '+140%', label: 'Growth in international partner leads', icon: 'globe' },
+      { value: '100%', label: 'Accessibility score (WCAG 2.2)', icon: 'check-circle' },
+      { value: '4.8/5', label: 'Client review score', icon: 'star' }
+    ],
+    overview: 'Buildcon presents an authoritative digital presence highlighting bridge, highway, and skyscraper engineering achievements worldwide.',
+    roles: ['Information Architecture', 'Visual Design', 'Interactive BIM Viewer'],
+    features: ['Interactive Project Map', '3D Structural Showcase', 'Investor Relations Hub', 'Bilingual Support'],
+    techStack: [{ name: 'React' }, { name: 'Three.js' }, { name: 'Gatsby' }, { name: 'Sanity CMS' }],
+    gallery: []
+  },
+  {
+    id: 'rotalytics-platform',
+    title: 'Rotalytics Platform',
+    category: 'saas-platforms',
+    categoryLabel: 'SAAS PLATFORM',
+    badgeText: 'SaaS Platform',
+    client: 'Rotalytics Enterprise',
+    industry: 'Business Intelligence',
+    timeline: '6 Months',
+    teamSize: '11 Members',
+    services: 'SaaS Engineering, Real-Time BI, Cloud DevOps',
+    liveUrl: 'https://www.rotalytics.com',
+    description: 'Real-time business intelligence platform for modern enterprises with automated revenue attribution.',
+    tags: ['SaaS Platform', 'Business Intelligence', 'Enterprise', 'Cloud'],
+    metrics: [
+      { value: '3.2B', label: 'Daily telemetry events processed', icon: 'activity' },
+      { value: '-45%', label: 'Decrease in customer churn', icon: 'trending-down' },
+      { value: '99.99%', label: 'Platform availability', icon: 'shield' },
+      { value: '4.9/5', label: 'Enterprise admin rating', icon: 'star' }
+    ],
+    overview: 'Rotalytics connects multi-channel revenue data into a single unified analytics cockpit with predictive cohort modeling.',
+    roles: ['Enterprise UX', 'Distributed Systems Development', 'DevOps Automation'],
+    features: ['Custom KPI Dashboards', 'Automated Anomaly Detection', 'Multi-tenant Permissions', 'ERP Integrations'],
+    techStack: [{ name: 'React' }, { name: 'Node.js' }, { name: 'ClickHouse' }, { name: 'Kubernetes' }],
+    gallery: []
+  },
+  {
+    id: 'eduvault-academy',
+    title: 'EduVault Academy',
+    category: 'web-applications',
+    categoryLabel: 'WEB APPLICATION',
+    badgeText: 'Web Application',
+    client: 'EduVault Global',
+    industry: 'EdTech',
+    timeline: '5 Months',
+    teamSize: '9 Members',
+    services: 'LMS Development, Gamified UI, Live Video Classroom',
+    liveUrl: 'https://www.eduvault.edu',
+    description: 'Academic management system and virtual campus for educational institutions and university networks.',
+    tags: ['Web Application', 'EdTech', 'LMS', 'Virtual Learning'],
+    metrics: [
+      { value: '250K+', label: 'Students enrolled across 80 colleges', icon: 'users' },
+      { value: '+92%', label: 'Course completion rate', icon: 'award' },
+      { value: '<100ms', label: 'Live video streaming latency', icon: 'video' },
+      { value: '4.8/5', label: 'Faculty & student satisfaction', icon: 'star' }
+    ],
+    overview: 'EduVault provides a modern learning management framework combining coursework, interactive assignments, and live lectures.',
+    roles: ['EdTech UX Design', 'Frontend Engineering', 'WebRTC Infrastructure'],
+    features: ['Interactive Quiz Engine', 'Live Video Classrooms', 'Student Progress Tracker', 'Digital Certificate Verification'],
+    techStack: [{ name: 'React' }, { name: 'WebRTC' }, { name: 'Express' }, { name: 'PostgreSQL' }],
+    gallery: []
+  }
+];

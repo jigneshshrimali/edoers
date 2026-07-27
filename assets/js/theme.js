@@ -4,6 +4,8 @@
  */
 
 import { state, subscribe, setTheme } from './state-manager.js';
+import logoDark from '../logo_dark.png';
+import logoLight from '../logo_light.png';
 
 export function initThemeEngine() {
   const toggleBtn = document.getElementById('theme-toggle');
@@ -36,13 +38,10 @@ export function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
 
 // Switch logo
-  const logo = document.getElementById('edoers-logo');
-  if (logo) {
-    logo.src =
-      theme === 'dark'
-        ? '/assets/logo_dark.png'
-        : '/assets/logo_light.png';
-  }
+document.querySelectorAll('.edoers-logo').forEach((logo) => {
+  logo.src = theme === 'dark' ? logoDark : logoLight;
+});
+
 
   const toggleBtn = document.getElementById('theme-toggle');
   if (toggleBtn) {

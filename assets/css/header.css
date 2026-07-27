@@ -54,7 +54,13 @@
 .logo:hover .logo-dot {
   transform: scale(1.5);
 }
-
+.edoers-logo
+{
+    width: auto;
+    height: auto;
+    max-height: 75px;
+    margin-right: 10px;
+}
 /* Nav Menu */
 .nav-menu {
   display: flex;

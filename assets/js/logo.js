@@ -18,8 +18,7 @@ export function getEdoersLogoSvg(options = {}) {
 <img
     class="edoers-logo"
     src="${theme === 'dark' ? logoDark : logoLight}"
-    style="height:75px;width:auto;"
-    alt="EDOERS Logo">
+    alt="EDOERS Technologies">
                 </div>
     `;
 }

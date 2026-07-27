@@ -3,7 +3,7 @@
  * Ribbon Cross Symbol + Geometric Lettering + "INTELLIGENCE. ENGINEERED." Tagline
  */
 import logoDark from '../logo_dark.png';
-import logoLight from '../logo_light.png';
+import logoLight from '../logo.png';
 
 export function getEdoersLogoSvg(options = {}) {
 

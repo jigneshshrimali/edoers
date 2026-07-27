@@ -5,7 +5,7 @@
 
 import { state, subscribe, setTheme } from './state-manager.js';
 import logoDark from '../logo_dark.png';
-import logoLight from '../logo_light.png';
+import logoLight from '../logo.png';
 
 export function initThemeEngine() {
   const toggleBtn = document.getElementById('theme-toggle');
